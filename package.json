@@ -1,7 +1,7 @@
 {
   "name": "devtechscraper",
   "version": "1.0.0",
-  "description": "Scrapes articles from www.developer-tech.com, stores them in mongodb, displays on on a page, and allows commenting",
+  "description": "Scrapes articles from www.developer-tech.com, stores in MongoDB database, displays them on a webpage, and allows commenting on articles.",
   "main": "server.js",
   "scripts": {
     "test": "node server.js",
@@ -12,21 +12,14 @@
     "url": "git+https://github.com/dscherer21/devtechscraper.git"
   },
   "keywords": [
-    "MongoDB",
-    "Scraper"
+    "node.js",
+    "mongodb",
+    "scraper"
   ],
   "author": "dscherer21",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dscherer21/devtechscraper/issues"
   },
-  "homepage": "https://github.com/dscherer21/devtechscraper#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.3",
-    "mongoose": "^5.0.11",
-    "morgan": "^1.9.0",
-    "request": "^2.85.0"
-  }
+  "homepage": "https://github.com/dscherer21/devtechscraper#readme"
 }

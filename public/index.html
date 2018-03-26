@@ -1,20 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="myClass.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-<body>
-  <div id="wrapper" class="container text-center">
-    <h1>Scraper of a scraper</h1>
-    <h2> Scraping barnacles and roadkill off the internet</h2>
-    <div id="stories" class="col-md-6"></div>
-    <div id="notes" class="col-md-6"></div>
-  </div>
-  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <script src="myApp.js"></script>
-</body>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>NoteTaker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style media="screen">
+      body {
+        text-align: center;
+        background-color: cornflowerblue;
+      }
+      h1 {
+        font-size: 40px;
+        color: white;
+      }
+      .deleter {
+        margin-left: 20px;
+        color: red;
+        cursor: pointer;
+        text-align: right;
+      }
+      input {
+        width: 400px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 42px;
+        background-color: antiquewhite;
+      }
+      textarea {
+        width: 400px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        background-color: antiquewhite;
+
+      }
+      .dataTitle {
+        cursor: pointer;
+        font-size: 24px;
+      }
+      #results {
+        width: 400px;
+        height: 200px;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+      }
+      #actionbutton {
+        display: inline-block;
+      }
+      #buttons {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mongo Note App</h1>
+    <div id="userinput">
+        <p>Title</p>
+        <input type="text" id="title" />
+      <br>
+        <p>Note</p>
+        <textarea id="note"></textarea>
+      <div id="buttons">
+        <div id="actionbutton">
+          <button id="makenew">Submit</button>
+        </div>
+        <button id="clearall">Delete All Notes</button>
+      </div>
+    </div>
+
+    <div id="results"></div>
+    <script src="app.js"></script>
+  </body>
 </html>
