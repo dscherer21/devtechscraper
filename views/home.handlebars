@@ -1,0 +1,51 @@
+<p></p>
+
+<body>
+<div class = 'container'>
+  <div class = 'row'>
+		  <div class = 'col-md-6 col-md-offset-3'>
+          <div class="panel-heading"><h2>Scraper</h2></div>
+          <div class="panel-body"><strong>This may not be legal, but my school is making me do it...</strong></div>
+		  </div>
+	</div>
+
+	<div class = 'row'>
+		  <div class = 'col-md-10 col-md-offset-1'>
+          <div class="panel-heading"><h3><strong>Orlando City Reddit Theft</strong><h3></div>
+          <div class="panel-body">
+            {{#each result}}
+                <p><strong>{{title}}</strong></p>
+                <a href>{{link}}</a href>
+                <p>{{comments}}</p>
+                  <div id="commentsBox">
+                    <p>Comment</p>
+                      <textarea class="form-control" rows="2" id="comments"></textarea>
+                  </div>
+                <br>
+                <button type="button" class="btn btn-primary" id="commentButton">Comment</button>
+                <br>
+            {{/each}}
+
+            <script type="text/javascript">
+                $('#commentButton').click( function(){
+                  $.ajax({
+                      type: "POST",
+                      url: '/comment',
+                          data: {
+                            comment: $('#comments').val().trim(),
+                          }
+                      })
+                  .done( function (data){
+                      console.log(data);
+                      $("#comments").empty();
+                  })
+                return false;
+               });
+            </script>
+
+          </div>
+		    </div>
+	   </div>
+
+</div>
+</body>
