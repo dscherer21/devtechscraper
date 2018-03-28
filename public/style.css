@@ -1,72 +1,62 @@
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover ,button, .btn-success{
-    background-color: #006b3a;
-    color: #ffffff;
-    margin: 10px 5px;
- }
-
- body {
-     font-family:'Vidaloka', serif;
-     background-color: #000000;
- }
-
- .container{
-     background-color: #ffffff;
- }
-
- button, .btn-success{
-    background-color: #006b3a;
-    color: #ffffff;
- }
- 
- a {
-     color: #006b3a;
- }
-
- a:hover{
-     color: #b4d6b7;
- }
-
-.header, .clearfix{
-     border-top: solid 2px #000000;
-     border-bottom: solid 2px #000000;
-     background-color: #b4d6b7;
-     margin: 10px -15px;
-     padding: 0px 20px;
+* {
+    box-sizing: border-box;
 }
 
- .footer{
-     display: inline-block;
-     width: 100%;
-     margin: 40px 0px;
-     padding: 5px 0px;
-     border-top: solid 2px #000000;
-     border-bottom: solid 2px #000000;
-     text-align: center;
-     background-color: #b4d6b7;
- }
+body {
+    font-family:'Vidaloka', serif;
+    background-color: white;
+    background-image: linear-gradient(180deg, rgba(84, 167, 223, 1), black, rgba(84, 167, 223, 1));
+}
 
-  .footer>p{
-      margin: 0px;
-  }
+div.row {
+    box-shadow: rgba(0,0,0,.5) 4px 2px 1px;
+}
+
+.jumbotron {
+    box-shadow: rgba(0,0,0,.5) 4px 2px 1px;
+}
+
+.container{
+    background-color: #ffffff;
+}
+
+.footer{
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0px;
+    padding: 5px 0px;
+    border-top: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+    text-align: center;
+    background-color: #eca944;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.footer>p{
+    margin: 0px;
+}
 
 .article-div{
-     border-bottom: solid 2px #000000;
- }
+    border-bottom: solid 2px #000000;
+}
 
 .comment-div{
     margin-top: 10px;
     padding: 0px 0px 10px 0px;
-     border: solid 2px #000000;
-     background-color: #dadada;
- }
+    border: solid 2px #000000;
+    background-color: #dadada;
+}
 
 .comment-title{
-     margin-top: 0px;
-     padding: 10px 5px;
-     border-bottom: solid 2px #000000;
-     background-color: #b4d6b7;
- }
+    margin-top: 0px;
+    padding: 10px 5px;
+    border-bottom: solid 2px #000000;
+    background-color: #b4d6b7;
+}
 
- .comment-body{
-     padding: 10px 5px;
- }
+.comment-body{
+    padding: 10px 5px;
+}
