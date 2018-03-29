@@ -2,6 +2,7 @@
 var mongoose = require("mongoose");
 // Create Schema class
 var Schema = mongoose.Schema;
+console.log('Savedarticle.js is loaded');
 
 // Create article schema
 var SavedarticleSchema = new Schema({
@@ -23,7 +24,6 @@ var SavedarticleSchema = new Schema({
     }
   ]
 });
-
 
 // Create the Article model with the ArticleSchema
 var Savedarticle = mongoose.model("Savedarticle", SavedarticleSchema);

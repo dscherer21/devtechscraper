@@ -276,7 +276,10 @@ app.get("/comments/:id", function (req, res) {
     });
 });
 
+
+
 app.get("/deletecomment/:id", function (req, res) {
+  console.log("Delete Button Clicked");
   Comment.findByIdAndRemove(req.params.id, function (err, doc) {
     if (err) {
       throw err;
