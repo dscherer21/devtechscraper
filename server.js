@@ -3,6 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var path = require('path');
+require('dotenv').config();
 
 var mongoose = require("mongoose");
 var Comment = require("./models/Comment.js");
@@ -39,7 +40,7 @@ app.set("view engine", "handlebars");
 // =========  Database configuration with mongoose ===============
 // ---------  define local MongoDB URI ----------
 var localMongo = "mongodb://localhost/devtechscraper";
-var MONGODB_URI = 'mongodb://<dbuser>:<dbpassword>@ds115214.mlab.com:15214/heroku_9dblpzq3';
+var MONGODB_URI = 'DB_PASS';
 
 //mongoose.connect(localMongo);
 

@@ -25,8 +25,8 @@ $(document).on("click", "#scrape-btn", function () {
       // A button to save a new article, with the id of the article saved to it
       $("#articles").append("<button data-id='" + data[i]._id + "' id='savearticle'>Save Article</button>");
     }
-    alert('Scraping Complete! Click the "Scraped" button to view the scraped articles.');
   });
+  alert('Scraping Complete! Click the "Scraped" button to view the scraped articles.');
 });
 
 // When you click the savearticle button
