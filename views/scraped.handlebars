@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <h1>Developer Tech Scraper</h1>
+    <p class="lead">Save articles for comments later.</p>
+    <p class="lead">Or use the navigation bar to see saved articles and comments.</p>
+</div>
+<div class="all-div">
+    {{#each articles}}
+        <div class="article-div" >
+            <h3 class="article-title">{{this.title}}</h3>
+            <h4 class="article-link"><a href="https://www.developer-tech.com/{{this.link}}" target='_blank'>'https://www.developer-tech.com/{{this.link}}'</a></h4>
+            <button class='btn btn-primary' data-id='{{this.id}}' id='savearticle'>Save Article</button>
+        </div>
+    {{/each}}
+</div>
