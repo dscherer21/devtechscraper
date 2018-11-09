@@ -46,11 +46,13 @@ var MONGODB_URI = 'DB_PASS';
 
 if (process.env.MONGODB_URI) {
   // this executes if this is being executed in heroku app
-  mongoose.connect(process.env.MONGODB_URI);
+  //mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 } else {
   // this ececutes if this is being executed on local machine
   console.log('Executing in Localhost!')
-  mongoose.connect(localMongo);
+  //mongoose.connect(localMongo);
+  mongoose.connect(localMongo, { useNewUrlParser: true });
 }
 
 // =========  End databse configuration  ================
